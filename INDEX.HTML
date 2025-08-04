@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dr. Jyoti Verma - Associate Professor & Founder of MBAMedia Productions. Expert in Management, AI, Fintech & Innovation.">
+    <meta name="keywords" content="Dr. Jyoti Verma, Associate Professor, Research, AI, Fintech, Management, Patents, Publications">
+    <title>Dr. Jyoti Verma - Academic Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            overflow-x: hidden;
+            background-color: #fafafa;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(255,255,255,0.1) 0%, transparent 50%);
+            opacity: 0.6;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            font-weight: 800;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+            letter-spacing: -0.02em;
+        }
+
+        .hero .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            opacity: 0.95;
+            font-weight: 500;
+        }
+
+        .hero .tagline {
+            font-size: 1.2rem;
+            opacity: 0.85;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        .credentials {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+
+        .credential-item {
+            background: rgba(255,255,255,0.15);
+            padding: 12px 24px;
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .credential-item:hover {
+            background: rgba(255,255,255,0.25);
+            transform: translateY(-2px);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .social-link {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            border-radius: 50px;
+            background: rgba(255,255,255,0.15);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .social-link:hover {
+            background: rgba(255,255,255,0.25);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        nav {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 2px 40px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            padding: 0 20px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-item {
+            margin: 0 2px;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 20px 28px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+            font-size: 0.95rem;
+            cursor: pointer;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: #667eea;
+            border-bottom-color: #667eea;
+            background: rgba(102, 126, 234, 0.05);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: 100px 0;
+            display: none;
+            animation: fadeIn 0.6s ease-in-out;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+            position: relative;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 60px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 30px auto;
+            border-radius: 2px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 50px 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            transition: all 0.4s ease;
+            border: 1px solid rgba(0,0,0,0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .stat-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            color: #555;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .publications-grid {
+            display: grid;
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .publication-card {
+            background: white;
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+            border-left: 5px solid #667eea;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .publication-card:hover {
+            transform: translateX(8px);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.12);
+            border-left-color: #764ba2;
+        }
+
+        .publication-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .publication-details {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        .publication-type {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 12px 25px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .patents-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-top: 50px;
+        }
+
+        .patent-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            border-top: 4px solid #667eea;
+            transition: all 0.3s ease;
+        }
+
+        .patent-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.15);
+        }
+
+        .patent-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            line-height: 1.4;
+        }
+
+        .patent-status {
+            display: inline-block;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .status-granted {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .status-published {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .experience-timeline {
+            position: relative;
+            margin-top: 60px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .timeline-line {
+            position: absolute;
+            left: 40px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 2px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 50px;
+            padding-left: 100px;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 28px;
+            top: 15px;
+            width: 24px;
+            height: 24px;
+            background: #667eea;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+            z-index: 2;
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            border: 1px solid rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+
+        .timeline-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .timeline-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .timeline-company {
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+
+        .timeline-duration {
+            color: #888;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .skill-category {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            border: 1px solid rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+        }
+
+        .skill-category h3 {
+            color: #1a1a1a;
+            margin-bottom: 30px;
+            font-size: 1.4rem;
+            font-weight: 700;
+            text-align: center;
+            position: relative;
+        }
+
+        .skill-category h3::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 15px auto;
+            border-radius: 2px;
+        }
+
+        .skill-item {
+            margin-bottom: 25px;
+        }
+
+        .skill-name {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .skill-bar {
+            height: 10px;
+            background: #f0f0f0;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 5px;
+            transition: width 2s ease-in-out;
+            position: relative;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin: 0 -20px;
+            padding: 100px 20px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-info {
+            text-align: center;
+            padding: 40px 30px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .contact-info:hover {
+            background: rgba(255,255,255,0.15);
+            transform: translateY(-5px);
+        }
+
+        .contact-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 1.8rem;
+        }
+
+        .contact-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .contact-details {
+            opacity: 0.9;
+            line-height: 1.8;
+        }
+
+        .mobile-nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #333;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .credentials {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .nav-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .mobile-nav-toggle {
+                display: block;
+                align-self: flex-end;
+            }
+
+            .nav-menu {
+                flex-direction: column;
+                width: 100%;
+                display: none;
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .nav-link {
+                padding: 15px 20px;
+                text-align: center;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+            }
+
+            .timeline-item {
+                padding-left: 60px;
+            }
+
+            .timeline-line {
+                left: 20px;
+            }
+
+            .timeline-dot {
+                left: 11px;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 20px;
+            }
+
+            .social-links {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+            transition: opacity 0.5s ease-out;
+        }
+
+        .loading.hide {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(255,255,255,0.3);
+            border-top: 4px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Dr. Jyoti Verma</h1>
+            <p class="subtitle">Associate Professor & Founder (MBAMedia Productions)</p>
+            <p class="tagline">Expertise in Management, AI, Fintech & Innovation</p>
+            
+            <div class="credentials">
+                <div class="credential-item">Ph.D. Management</div>
+                <div class="credential-item">UGC-NET</div>
+                <div class="credential-item">MBA Finance & International Business</div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://orcid.org/0000-0002-7559-4312" class="social-link" target="_blank">🆔 ORCID</a>
+                <a href="https://www.linkedin.com/in/drjyotiverma/" class="social-link" target="_blank">💼 LinkedIn</a>
+                <a href="https://scholar.google.com/citations?user=blb6d64AAAAJ&hl=en" class="social-link" target="_blank">🎓 Scholar</a>
+                <a href="https://www.researchgate.net/profile/Jyoti-Verma-33" class="social-link" target="_blank">🔬 ResearchGate</a>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <button class="mobile-nav-toggle" id="mobileNavToggle">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#overview" class="nav-link active" data-section="overview">Overview</a></li>
+                <li class="nav-item"><a href="#research" class="nav-link" data-section="research">Research</a></li>
+                <li class="nav-item"><a href="#patents" class="nav-link" data-section="patents">Patents</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Overview Section -->
+        <section id="overview" class="section active">
+            <div class="container">
+                <h2 class="section-title">Academic Excellence</h2>
+                <p class="section-subtitle">Transforming education and research through innovation, technology, and entrepreneurial leadership</p>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">35+</div>
+                        <div class="stat-label">Published Papers</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">6+</div>
+                        <div class="stat-label">Patents Granted</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">30+</div>
+                        <div class="stat-label">Book Chapters</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Published Books</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Copyrights</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section id="research" class="section">
+            <div class="container">
+                <h2 class="section-title">Research Publications</h2>
+                <p class="section-subtitle">Cutting-edge research in AI, fintech, management, and emerging technologies</p>
+                
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Publications</button>
+                    <button class="filter-btn" data-filter="journal">Journal Papers</button>
+                    <button class="filter-btn" data-filter="book">Books</button>
+                    <button class="filter-btn" data-filter="chapter">Book Chapters</button>
+                </div>
+
+                <div class="publications-grid" id="publicationsGrid">
+                    <div class="publication-card" data-type="journal">
+                        <div class="publication-title">Natural Language Processing for Sentiment Analysis in Social Media Posts to Identify Suspicious Behaviour</div>
+                        <div class="publication-details">Deep Gagan, Verma Jyoti (2025) - Abhigyan Journal</div>
+                        <span class="publication-type">Sage Journal</span>
+                    </div>
+
+                    <div class="publication-card" data-type="book">
+                        <div class="publication-title">Adoption of NFTs and Cryptocurrency in Marketing</div>
+                        <div class="publication-details">IGI Global Publishing (Apr, 2024)</div>
+                        <span class="publication-type">Scopus Indexed Book</span>
+                    </div>
+
+                    <div class="publication-card" data-type="journal">
+                        <div class="publication-title">Past, present and future of computational intelligence: A bibliometric analysis</div>
+                        <div class="publication-details">Kaur Jasneet, Verma Jyoti (2023) - AIP Conference Proceedings</div>
+                        <span class="publication-type">Scopus Indexed</span>
+                    </div>
+
+                    <div class="publication-card" data-type="chapter">
+                        <div class="publication-title">The Role of AI and Machine Learning in Neuromarketing</div>
+                        <div class="publication-details">IGI Global Publishing (October, 2024)</div>
+                        <span class="publication-type">Scopus Indexed Chapter</span>
+                    </div>
+
+                    <div class="publication-card" data-type="journal">
+                        <div class="publication-title">Do Entrepreneurship Educational Programmes Build Startup Skills among Indian Women</div>
+                        <div class="publication-details">International Journal of Sociotechnology and Knowledge Development (2022)</div>
+                        <span class="publication-type">Q3, H-Index=17, Scopus</span>
+                    </div>
+
+                    <div class="publication-card" data-type="book">
+                        <div class="publication-title">Big Data: Road-Map for Successful Digital Marketing</div>
+                        <div class="publication-details">Nova Science Publishers (Sept, 2023)</div>
+                        <span class="publication-type">Scopus Indexed Book</span>
+                    </div>
+
+                    <div class="publication-card" data-type="chapter">
+                        <div class="publication-title">Unleashing the power of artificial intelligence: Exploring multidisciplinary frontiers</div>
+                        <div class="publication-details">CRC Press (September, 2024)</div>
+                        <span class="publication-type">Scopus Indexed Chapter</span>
+                    </div>
+
+                    <div class="publication-card" data-type="journal">
+                        <div class="publication-title">Embracing the Future: AI and ML Transforming Urban Environments in Smart Cities</div>
+                        <div class="publication-details">Journal on Artificial Intelligence, Vol. 5 (2023)</div>
+                        <span class="publication-type">Research Journal</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Patents Section -->
+        <section id="patents" class="section">
+            <div class="container">
+                <h2 class="section-title">Innovation & Patents</h2>
+                <p class="section-subtitle">Transforming ideas into patented innovations across multiple domains</p>
+                <div class="patents-grid">
+                    <div class="patent-card">
+                        <div class="patent-title">CARRYFREE - A Sensor-Enabled Weight Detection System for School Bags</div>
+                        <span class="patent-status status-granted">Granted - June 2024</span>
+                    </div>
+                    
+                    <div class="patent-card">
+                        <div class="patent-title">Tick Pick Bin</div>
+                        <span class="patent-status status-granted">Granted - May 2024</span>
+                    </div>
+                    
+                    <div class="patent-card">
+                        <div class="patent-title">Hair-Band Cum Cap</div>
+                        <span class="patent-status status-granted">Granted - Sept 2023</span>
+                    </div>
+                    
+                    <div class="patent-card">
+                        <div class="patent-title">Portable 3D Scanners</div>
+                        <span class="patent-status status-granted">Granted - May 2023</span>
+                    </div>
+                    
+                    <div class="patent-card">
+                        <div class="patent-title">Reverse Osmosis (RO) With Waste Water Management System</div>
+                        <span class="patent-status status-granted">Granted - Jan 2023</span>
+                    </div>
+                    
+                    <div class="patent-card">
+                        <div class="patent-title">Soap Cum Sanitizer Dispenser</div>
+                        <span class="patent-status status-granted">Granted - Feb 2023</span>
+                    </div>
+                    
+                    <div class="patent-card">
+                        <div class="patent-title">Smart Shopping System with Intelligence Cart Module Based on AI and IoT</div>
+                        <span class="patent-status status-published">Published - Sept 2021</span>
+                    </div>
+                    
+                    <div class="patent-card">
+                        <div class="patent-title">A Hair Care Oil Composition and Method of Preparation Thereof</div>
+                        <span class="patent-status status-published">Published - Nov 2022</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title">Professional Journey</h2>
+                <p class="section-subtitle">A progressive career spanning academia, research, and entrepreneurship</p>
+                <div class="experience-timeline">
+                    <div class="timeline-line"></div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Founder</div>
+                            <div class="timeline-company">MBAMedia Productions</div>
+                            <div class="timeline-duration">2024 - Present</div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Associate Professor</div>
+                            <div class="timeline-company">Chitkara University</div>
+                            <div class="timeline-duration">2022 - Present</div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Assistant Professor</div>
+                            <div class="timeline-company">Chitkara University</div>
+                            <div class="timeline-duration">2020 - 2022</div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Assistant Professor</div>
+                            <div class="timeline-company">RIMT University</div>
+                            <div class="timeline-duration">2019 - 2020</div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Assistant Professor</div>
+                            <div class="timeline-company">Lovely Professional University</div>
+                            <div class="timeline-duration">2012 - 2015</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Core Competencies</h2>
+                <p class="section-subtitle">Multidisciplinary expertise across research, technology, and business domains</p>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Research & Academia</h3>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Research Methodology</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Academic Writing</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Data Analysis (SPSS, R)</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Technology & Innovation</h3>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Artificial Intelligence</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Blockchain Technology</span>
+                                <span>82%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="82"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Digital Marketing</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Business & Finance</h3>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Financial Analysis</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Entrepreneurship</span>
+                                <span>87%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="87"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Banking & Fintech</span>
+                                <span>89%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="89"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Leadership & Management</h3>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Team Leadership</span>
+                                <span>93%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="93"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Project Management</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Strategic Planning</span>
+                                <span>91%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="91"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="contact-section">
+                <div class="container">
+                    <h2 class="section-title" style="color: white;">Get In Touch</h2>
+                    <p class="section-subtitle" style="color: rgba(255,255,255,0.9);">Let's collaborate on research, innovation, and academic excellence</p>
+                    
+                    <div class="contact-grid">
+                        <div class="contact-info">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-title">Location</div>
+                            <div class="contact-details">
+                                Patiala, Punjab<br>
+                                India
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info">
+                            <div class="contact-icon">🎓</div>
+                            <div class="contact-title">Institution</div>
+                            <div class="contact-details">
+                                Associate Professor<br>
+                                Chitkara University
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info">
+                            <div class="contact-icon">🚀</div>
+                            <div class="contact-title">Enterprise</div>
+                            <div class="contact-details">
+                                Founder<br>
+                                MBAMedia Productions
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info">
+                            <div class="contact-icon">🔬</div>
+                            <div class="contact-title">Research Areas</div>
+                            <div class="contact-details">
+                                AI, Fintech, Management<br>
+                                Digital Marketing, Innovation
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Loading animation
+        window.addEventListener('load', function() {
+            const loading = document.getElementById('loading');
+            setTimeout(() => {
+                loading.classList.add('hide');
+            }, 1000);
+        });
+
+        // Navigation functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('.section');
+            const mobileNavToggle = document.getElementById('mobileNavToggle');
+            const navMenu = document.getElementById('navMenu');
+
+            // Mobile navigation toggle
+            mobileNavToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
+
+            // Section navigation
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all nav links
+                    navLinks.forEach(nl => nl.classList.remove('active'));
+                    // Add active class to clicked link
+                    this.classList.add('active');
+                    
+                    // Hide all sections
+                    sections.forEach(section => {
+                        section.classList.remove('active');
+                    });
+                    
+                    // Show target section
+                    const targetSection = document.getElementById(this.dataset.section);
+                    if (targetSection) {
+                        targetSection.classList.add('active');
+                        
+                        // Animate skill bars if skills section
+                        if (this.dataset.section === 'skills') {
+                            animateSkillBars();
+                        }
+                    }
+
+                    // Close mobile menu if open
+                    navMenu.classList.remove('active');
+                });
+            });
+
+            // Filter functionality for publications
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const publicationCards = document.querySelectorAll('.publication-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all filter buttons
+                    filterBtns.forEach(fb => fb.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filterValue = this.dataset.filter;
+                    
+                    publicationCards.forEach(card => {
+                        if (filterValue === 'all' || card.dataset.type === filterValue) {
+                            card.style.display = 'block';
+                            card.style.animation = 'fadeIn 0.5s ease-in-out';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Animate skill bars
+            function animateSkillBars() {
+                const skillBars = document.querySelectorAll('.skill-progress');
+                skillBars.forEach(bar => {
+                    const width = bar.dataset.width;
+                    bar.style.width = '0%';
+                    setTimeout(() => {
+                        bar.style.width = width + '%';
+                    }, 200);
+                });
+            }
+
+            // Smooth scrolling for hero section
+            const heroContent = document.querySelector('.hero-content');
+            let heroAnimated = false;
+
+            function checkHeroAnimation() {
+                if (!heroAnimated && window.scrollY < window.innerHeight / 2) {
+                    heroContent.style.transform = 'translateY(0)';
+                    heroContent.style.opacity = '1';
+                    heroAnimated = true;
+                }
+            }
+
+            window.addEventListener('scroll', checkHeroAnimation);
+            checkHeroAnimation();
+
+            // Add hover effects to cards
+            const cards = document.querySelectorAll('.stat-card, .publication-card, .patent-card, .timeline-content, .skill-category, .contact-info');
+            
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = this.style.transform || '';
+                });
+            });
+
+            // Intersection Observer for animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all animated elements
+            const animatedElements = document.querySelectorAll('.stat-card, .publication-card, .patent-card, .timeline-item, .skill-category');
+            animatedElements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+
+            // Add typing effect to hero title
+            const heroTitle = document.querySelector('.hero h1');
+            const titleText = heroTitle.textContent;
+            heroTitle.textContent = '';
+            
+            let i = 0;
+            function typeTitle() {
+                if (i < titleText.length) {
+                    heroTitle.textContent += titleText.charAt(i);
+                    i++;
+                    setTimeout(typeTitle, 100);
+                }
+            }
+            
+            setTimeout(typeTitle, 500);
+        });
+
+        // Add scroll-based navigation highlighting
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('.section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('data-section') === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
